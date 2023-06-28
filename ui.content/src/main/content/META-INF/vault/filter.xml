@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/aperfectrcircle" mode="merge"/>
+    <filter root="/content/aperfectrcircle" mode="merge"/>
+    <filter root="/content/dam/aperfectrcircle" mode="merge">
+        <exclude pattern="/content/dam/aperfectrcircle(/.*)?"/>
+        <include pattern="/content/dam/aperfectrcircle/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/aperfectrcircle/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/aperfectrcircle" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-themes/aperfectrcircle" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-fdm/aperfectrcircle" mode="merge"/>
+    <filter root="/content/dam/aperfectrcircle/sample_logo.png" mode="merge"/>
+    <filter root="/content/dam/aperfectrcircle/sample_terms.png" mode="merge"/>
+</workspaceFilter>

@@ -3,24 +3,16 @@
   "exposedheaders":[
     ""
   ],
-  "alloworigin":[
-    ""
-  ],
-  "allowedpaths":[
-    ".*"
-  ],
-  "supportedheaders":[
-    "*"
-  ],
   "supportedmethods":[
     "GET",
     "HEAD",
     "POST",
-    "PUT",
-    "DELETE",
-    "PATCH",
     "OPTIONS"
   ],
+  "alloworigin":[
+    ""
+  ],
+  "maxage:Integer":1800,
   "alloworiginregexp":[
     "http://localhost:.*",
     "https://localhost:.*",
@@ -44,5 +36,20 @@
     "https://main--summit-demo--markszulc.hlx.live",
     "https://.*\\.adobe\\.com",
     "https://.*\\.adobe\\.net"
+  ],
+  "allowedpaths":[
+    ".*"
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "content-type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers",
+    "Access-Control-Request-Origin",
+    "Access-Control-Allow-Origin",
+    "Authorization"
   ]
 }

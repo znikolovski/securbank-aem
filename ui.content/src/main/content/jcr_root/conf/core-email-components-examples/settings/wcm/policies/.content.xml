@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <rep:policy/>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Default Container"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:Core E-Mail Components Examples]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </default>
+                    <policy_3575489987586541
+                        jcr:lastModified="{Date}2023-10-06T18:39:44.508+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Email"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="group:Core E-Mail Components Examples">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_3575489987586541>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
+    <core-email-components-examples jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <image jcr:primaryType="nt:unstructured">
+                <default
+                    jcr:lastModified="{Date}2022-06-02T11:40:41.257+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Default Image"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    altValueFromDAM="true"
+                    defaultWidth="1280"
+                    displayPopupTitle="true"
+                    isDecorative="false"
+                    titleValueFromDAM="true">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </default>
+            </image>
+            <page jcr:primaryType="nt:unstructured">
+                <default
+                    jcr:lastModified="{Date}2023-10-24T14:08:27.207+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Default Page"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    appResourcesClientlib="cmp-email-examples.site"
+                    clientlibs="[cmp-email-examples.base,aperfectrcircle.email]"
+                    clientlibsAsync="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </default>
+            </page>
+            <segmentation jcr:primaryType="nt:unstructured">
+                <default
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Default Segmentation"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:Core E-Mail Components Examples">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <definedConditions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            condition="person.gender = female"
+                            name="Female"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            condition="person.gender = male"
+                            name="Male"/>
+                    </definedConditions>
+                </default>
+            </segmentation>
+            <title jcr:primaryType="nt:unstructured">
+                <policy_1696569480917
+                    jcr:lastModified="{Date}2023-10-06T18:41:51.198+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Email Components"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedTypes="[h1,h2,h3,h4,h5,h6]"
+                    linkDisabled="false"
+                    type="h1">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Color"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-title--gray"
+                                    cq:styleId="1696569486297"
+                                    cq:styleLabel="Grey"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1696569480917>
+            </title>
+            <xfpage jcr:primaryType="nt:unstructured">
+                <policy_1696577996723
+                    jcr:lastModified="{Date}2023-10-06T18:43:04.971+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="EmailXF"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="[cmp-email-examples.base,wnkd.email]">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1696577996723>
+            </xfpage>
+            <container jcr:primaryType="nt:unstructured">
+                <policy_1696578378771
+                    jcr:lastModified="{Date}2023-10-06T19:08:44.139+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="emailTable"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedColorSwatches="#F3F2F6">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Background"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-table--grey"
+                                    cq:styleId="1696578568681"
+                                    cq:styleLabel="Grey"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1696578378771>
+            </container>
+        </components>
+    </core-email-components-examples>
+</jcr:root>

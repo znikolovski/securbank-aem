@@ -88,7 +88,17 @@
                             <artifactId>core-forms-components-af-core</artifactId>
                             <target>/apps/aperfectrcircle-vendor-packages/application/install</target>
                         </embedded>
-                                                                </embeddeds>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.email.components.all</artifactId>
+                            <target>/apps/aperfectrcircle-packages/container/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.email.components.examples.all</artifactId>
+                            <target>/apps/aperfectrcircle-packages/container/install</target>
+                        </embedded>
+                    </embeddeds>
                 </configuration>
             </plugin>
             <plugin>
@@ -226,6 +236,16 @@
         <dependency>
           <groupId>com.adobe.aem</groupId>
           <artifactId>core-forms-components-af-core</artifactId>
+        </dependency>
+        <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.email.components.all</artifactId>
+                <type>zip</type>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.email.components.examples.all</artifactId>
+                <type>zip</type>
         </dependency>
           </dependencies>
 </project>

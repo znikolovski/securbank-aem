@@ -88,6 +88,34 @@ module.exports = {
           ignore: ['**/*.js', '**/*.css']
         }
       }
+    },
+    {
+      ...libsBaseConfig,
+      name: 'clientlib-email',
+      categories: ['aperfectrcircle.email'],
+      dependencies: ['aperfectrcircle.email.dependencies'],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: 'clientlib-email',
+          files: ['**/*.js'],
+          flatten: false
+        },
+        css: {
+          cwd: 'clientlib-email',
+          files: ['**/*.css'],
+          flatten: false
+        },
+
+        // Copy all other files into the `resources` ClientLib directory
+        resources: {
+          cwd: 'clientlib-email',
+          files: ['**/*.*'],
+          flatten: false,
+          ignore: ['**/*.js', '**/*.css']
+        }
+      }
     }
   ]
 };

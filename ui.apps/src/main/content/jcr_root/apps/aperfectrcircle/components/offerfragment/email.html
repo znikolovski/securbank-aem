@@ -1,0 +1,98 @@
+<template data-sly-template.contentFragment="${@ fragment='The content fragment', fragmentPath='', wcmmode='WCM mode'}">
+    <sly data-sly-list.element="${fragment.elements}">
+        <sly data-sly-test="${element.title == 'headline'}">
+            <sly data-sly-test.headline="${element.value}"></sly>
+        </sly>
+        <sly data-sly-test="${element.title == 'pretitle'}">
+            <sly data-sly-test.pretitle="${element.value}"></sly>
+        </sly>
+        <sly data-sly-test="${element.title == 'detail'}">
+            <sly data-sly-test.detail="${element.value @ context='html'}"></sly>
+        </sly>
+        <sly data-sly-test="${element.title == 'callToAction'}">
+            <sly data-sly-test.callToAction="${element.value}"></sly>
+        </sly>
+        <sly data-sly-test="${element.title == 'ctaUrl'}">
+            <sly data-sly-test.ctaUrl="${element.value}"></sly>
+        </sly>
+        <sly data-sly-test="${element.title == 'heroImage'}">
+            <sly data-sly-test.heroImage="${element.value}"></sly>
+        </sly>
+    </sly>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f9f9f9;background-color:#f9f9f9;width:100%;">
+        <tbody>
+            <tr style="height: 400px; width: 100%; background-image: url(${heroImage @ context='uri'})">
+                <td>
+                
+                    <!--[if mso | IE]>
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        
+    <tr>
+    <![endif]-->
+                    
+    <!--[if mso | IE]>
+    </tr>
+    
+          </table>
+        <![endif]-->
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding-top: 30px; margin-top: 260px; width: 100%" bgcolor="#171C29">
+                        <tbody>
+                            <tr >
+                                <td style="width: 70%; padding-left: 20px;">
+                                    <p style="white-space: nowrap;
+                                    line-height: 52px;
+                                    margin-top: -16px;
+                                    text-align: left;
+                                    font-family: Helvetica;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 20px;
+                                    color: rgba(255,255,255,1)">${pretitle}</p>
+                                    <p style="overflow: visible;
+                                    width: 156px;
+                                    white-space: nowrap;
+                                    line-height: 52px;
+                                    margin-top: -16px;
+                                    text-align: left;
+                                    font-family: Helvetica;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                    color: rgba(255,255,255,1);">${headline}</p>
+                                </td>
+                                <td style="margin-right: 20px;">
+                                    <div align="center">
+                                        <!--[if mso]>
+                                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${ctaUrl}" style="height:36px;v-text-anchor:middle;width:200px;" arcsize="50%" stroke="f" fillcolor="#CBE7F0">
+                                            <w:anchorlock/>
+                                            <center>
+                                            <![endif]-->
+                                            <a href="${ctaUrl}"
+                                            style="background-color:#CBE7F0;border-radius:18px;display:inline-block;font-family: Adobe Clean;
+                                            font-style: normal;
+                                            font-weight: bold;
+                                            font-size: 16px;
+                                            color: rgba(44,44,44,1);line-height:36px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">${callToAction}</a>
+                                          <!--[if mso]>
+                                            </center>
+                                          </v:roundrect>
+                                        <![endif]--></div>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding-left:1px;padding-right:1px;height:1px;line-height:1px;font-size:1px;"><div style="display:block;height:5px;background-color:#171C29;line-height:1px;font-size:1px;"> </div></td>
+              </tr>
+              <tr>
+                <td align="center" style="padding-left:2px;padding-right:2px;height:1px;line-height:1px;font-size:1px;"><div style="display:block;height:1px;background-color:#171C29;line-height:1px;font-size:1px;"> </div></td>
+              </tr>
+              <tr>
+                <td align="center" style="padding-left:4px;padding-right:4px;height:1px;line-height:1px;font-size:1px;"><div style="display:block;height:1px;background-color:#171C29;line-height:1px;font-size:1px;"> </div></td>
+              </tr>
+        </tbody>
+    </table>
+</template>

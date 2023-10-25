@@ -1,27 +1,27 @@
 <template data-sly-template.contentFragment="${@ fragment='The content fragment', fragmentPath='', wcmmode='WCM mode'}">
     <sly data-sly-list.element="${fragment.elements}">
-        <sly data-sly-test="${element.title == 'headline'}">
+        <sly data-sly-test="${element.name == 'headline'}">
             <sly data-sly-test.headline="${element.value}"></sly>
         </sly>
-        <sly data-sly-test="${element.title == 'pretitle'}">
+        <sly data-sly-test="${element.name == 'pretitle'}">
             <sly data-sly-test.pretitle="${element.value}"></sly>
         </sly>
-        <sly data-sly-test="${element.title == 'detail'}">
+        <sly data-sly-test="${element.name == 'detail'}">
             <sly data-sly-test.detail="${element.value @ context='html'}"></sly>
         </sly>
-        <sly data-sly-test="${element.title == 'callToAction'}">
+        <sly data-sly-test="${element.name == 'callToAction'}">
             <sly data-sly-test.callToAction="${element.value}"></sly>
         </sly>
-        <sly data-sly-test="${element.title == 'ctaUrl'}">
+        <sly data-sly-test="${element.name == 'ctaUrl'}">
             <sly data-sly-test.ctaUrl="${element.value}"></sly>
         </sly>
-        <sly data-sly-test="${element.title == 'heroImage'}">
+        <sly data-sly-test="${element.name == 'heroImage'}">
             <sly data-sly-test.heroImage="${element.value}"></sly>
         </sly>
     </sly>
     <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f9f9f9;background-color:#f9f9f9;width:100%;">
         <tbody>
-            <tr style="height: 400px; width: 100%; background-image: url(${heroImage @ context='uri'})">
+            <tr style="background-size: cover; background-repeat: no-repeat;  background-image: url(${heroImage @ context='uri'})">
                 <td>
                 
                     <!--[if mso | IE]>

@@ -647,13 +647,13 @@ Bundle-DocURL:
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>core.email.components.all</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
                 <type>zip</type>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>core.email.components.examples.all</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
                 <type>zip</type>
         </dependency>
         </dependencies>

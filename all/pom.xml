@@ -99,6 +99,13 @@
                             <target>/apps/aperfectrcircle-packages/container/install</target>
                         </embedded>
                     </embeddeds>
+                    <subPackages>
+                        <subPackage>
+                            <groupId>com.adobe.aem</groupId>
+                            <artifactId>core-forms-components-all</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                    </subPackages>
                 </configuration>
             </plugin>
             <plugin>
@@ -220,32 +227,19 @@
 
         <!-- AEM Forms Dependencies -->
         <dependency>
-          <groupId>com.adobe.aem</groupId>
-          <artifactId>core-forms-components-apps</artifactId>
-          <type>zip</type>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>core-forms-components-all</artifactId>
+            <type>zip</type>
         </dependency>
         <dependency>
-          <groupId>com.adobe.aem</groupId>
-          <artifactId>core-forms-components-core</artifactId>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.email.components.all</artifactId>
+            <type>zip</type>
         </dependency>
         <dependency>
-          <groupId>com.adobe.aem</groupId>
-          <artifactId>core-forms-components-af-apps</artifactId>
-          <type>zip</type>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.email.components.examples.all</artifactId>
+            <type>zip</type>
         </dependency>
-        <dependency>
-          <groupId>com.adobe.aem</groupId>
-          <artifactId>core-forms-components-af-core</artifactId>
-        </dependency>
-        <dependency>
-                <groupId>com.adobe.cq</groupId>
-                <artifactId>core.email.components.all</artifactId>
-                <type>zip</type>
-            </dependency>
-            <dependency>
-                <groupId>com.adobe.cq</groupId>
-                <artifactId>core.email.components.examples.all</artifactId>
-                <type>zip</type>
-        </dependency>
-          </dependencies>
+    </dependencies>
 </project>

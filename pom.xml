@@ -38,7 +38,7 @@
 
     <properties>
         <aem.host>localhost</aem.host>
-        <aem.port>4506</aem.port>
+        <aem.port>4502</aem.port>
         <aem.publish.host>localhost</aem.publish.host>
         <aem.publish.port>4503</aem.publish.port>
         <sling.user>admin</sling.user>
@@ -48,8 +48,8 @@
         <frontend-maven-plugin.version>1.12.0</frontend-maven-plugin.version>
         <core.wcm.components.version>2.21.2</core.wcm.components.version>
 
-        <core.forms.components.version>2.0.6</core.forms.components.version>
-        <core.forms.components.af.version>2.0.6</core.forms.components.af.version>
+        <core.forms.components.version>2.0.96-eds</core.forms.components.version>
+        <core.forms.components.af.version>2.0.96-eds</core.forms.components.af.version>
         <aem.forms.sdk.api>2023.06.19.00-230400</aem.forms.sdk.api>
         <bnd.version>5.1.2</bnd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -545,7 +545,13 @@ Bundle-DocURL:
                 <artifactId>aem-forms-sdk-api</artifactId>
                 <version>${aem.forms.sdk.api}</version>
             </dependency>
-                        <dependency>
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>core-forms-components-all</artifactId>
+                <type>zip</type>
+                <version>${core.forms.components.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>core-forms-components-apps</artifactId>
                 <type>zip</type>
@@ -655,7 +661,12 @@ Bundle-DocURL:
                 <artifactId>core.email.components.examples.all</artifactId>
                 <version>1.2.2</version>
                 <type>zip</type>
-        </dependency>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.email.components.core</artifactId>
+                <version>1.2.2</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

@@ -17,4 +17,5 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/aperfectrcircle-packages"/>
     <filter root="/apps/aperfectrcircle-vendor-packages"/>
+    <filter root="/etc/packages/adobe/cq60" mode="merge"/>
 </workspaceFilter>

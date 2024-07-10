@@ -48,8 +48,8 @@
         <frontend-maven-plugin.version>1.12.0</frontend-maven-plugin.version>
         <core.wcm.components.version>2.21.2</core.wcm.components.version>
 
-        <core.forms.components.version>2.0.96-eds</core.forms.components.version>
-        <core.forms.components.af.version>2.0.96-eds</core.forms.components.af.version>
+        <core.forms.components.version>3.0.44</core.forms.components.version>
+        <core.forms.components.af.version>3.0.44</core.forms.components.af.version>
         <aem.forms.sdk.api>2023.06.19.00-230400</aem.forms.sdk.api>
         <bnd.version>5.1.2</bnd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

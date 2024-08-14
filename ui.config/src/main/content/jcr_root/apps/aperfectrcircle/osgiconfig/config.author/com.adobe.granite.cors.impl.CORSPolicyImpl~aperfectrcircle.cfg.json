@@ -1,7 +1,18 @@
 {
   "supportscredentials":true,
   "exposedheaders":[
-    ""
+    "Link",
+    "Etag",
+    "Version",
+    "Revision",
+    "Content-MD5",
+    "Location",
+    "Content-Location",
+    "asset-id",
+    "x-resource-id",
+    "x-medialibrary-version",
+    "x-request-id",
+    "X-Max-References-Depth"
   ],
   "alloworigin":[
     ""

@@ -46,8 +46,6 @@
     "https://main--dryp-aem-ue--znikolovski.hlx.live",
     "https://28538-offerorchestrator.adobeio-static.net",
     "https://main--summit-demo--markszulc.hlx.page",
-    "https://main--summit-demo--markszulc.hlx.live",
-    "https://.*\\.adobe\\.com",
-    "https://.*\\.adobe\\.net"
+    "https://main--summit-demo--markszulc.hlx.live"
   ]
 }

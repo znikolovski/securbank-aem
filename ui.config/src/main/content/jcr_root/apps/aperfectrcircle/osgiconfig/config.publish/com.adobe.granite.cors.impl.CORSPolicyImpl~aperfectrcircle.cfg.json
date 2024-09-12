@@ -22,6 +22,7 @@
     "https://localhost:.*",
     "https://node.au.ngrok.io",
     "https://experience.adobe.com",
+    "https://*.adobeio-static.net",
     "https://securbank-react.vercel.app",
     "https://securbank-ue.vercel.app",
     "https://20092-cfpreview-stage.adobeio-static.net",

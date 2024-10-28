@@ -1,0 +1,6 @@
+{
+    "restrictionPropertyNames":[
+      "xdm:channelName"
+    ],
+    "enabled":true
+  }

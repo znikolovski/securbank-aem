@@ -1,6 +1,7 @@
 {
     "restrictionPropertyNames":[
-      "xdm:channelName"
+      "xdm:channelName",
+      "dam:assetStatus"
     ],
     "enabled":true
   }

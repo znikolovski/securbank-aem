@@ -1,0 +1,18 @@
+{
+    "allow.empty": false,
+    "allow.hosts": [],
+    "allow.hosts.regexp": [
+      "https://.*\\.hlx\\.page:443",
+      "https://.*\\.hlx\\.live:443"
+    ],
+    "filter.methods": [
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp": [
+      ""
+    ]
+  }

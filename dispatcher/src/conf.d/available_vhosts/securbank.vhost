@@ -36,6 +36,21 @@ Include conf.d/variables/custom.vars
 		################## Adapt regex to match CORS origin(s) for your environment
 		SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 		SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.aem\.live$)#" CORSTrusted=true
+		SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.securbankdemo\.work$)#" CORSTrusted=true
+		# Developer Localhost
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+        # Adobe AppBuilder
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://experience\.adobe\.com$)#" CORSTrusted=true          
+        # Developer Vercel app
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.vercel\.app$)#" CORSTrusted=true
+        # Developer Github.io app
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.github\.io$)#" CORSTrusted=true
+        # Developer Codesandbox.io app
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.csb\.app$)#" CORSTrusted=true
+        # Developer CodePen.io app
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://cdpn\.io$)#" CORSTrusted=true
+		# Raw AEM URL
+		SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.adobeaemcloud\.com$)#" CORSTrusted=true
 
 		# Extract the Origin header
 		SetEnvIfNoCase ^Origin$ ^(.*)$ CORSTrustedOrigin=$1

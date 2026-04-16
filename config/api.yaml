@@ -1,0 +1,8 @@
+kind: "API"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  allowedClientIDs:
+    author:
+      - "aem-extension-builder"

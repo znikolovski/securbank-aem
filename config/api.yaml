@@ -6,8 +6,8 @@ data:
   allowedClientIDs:
     author:
       - "aem-extension-builder"
-      - "c2de13d297f649d38d3329695ef22b59"
+      - "ecf1d288306b42adaa67972f00b05080"
     publish:
-      - "c2de13d297f649d38d3329695ef22b59"
+      - "ecf1d288306b42adaa67972f00b05080"
     preview:
-      - "c2de13d297f649d38d3329695ef22b59"
+      - "ecf1d288306b42adaa67972f00b05080"

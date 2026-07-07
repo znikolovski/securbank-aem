@@ -98,6 +98,12 @@
                             <artifactId>core.email.components.examples.all</artifactId>
                             <target>/apps/aperfectrcircle-packages/container/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>com.aperfectrcircle.commerce</groupId>
+                            <artifactId>com.aperfectrcircle.commerce.all</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aperfectrcircle-packages/application/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -240,6 +246,16 @@
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.email.components.examples.all</artifactId>
             <type>zip</type>
+        </dependency>
+
+        <!-- Commerce package (bundled locally under src/main/resources/packages) -->
+        <dependency>
+            <groupId>com.aperfectrcircle.commerce</groupId>
+            <artifactId>com.aperfectrcircle.commerce.all</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/packages/com.aperfectrcircle.commerce.all-0.0.1-SNAPSHOT.zip</systemPath>
         </dependency>
     </dependencies>
 </project>

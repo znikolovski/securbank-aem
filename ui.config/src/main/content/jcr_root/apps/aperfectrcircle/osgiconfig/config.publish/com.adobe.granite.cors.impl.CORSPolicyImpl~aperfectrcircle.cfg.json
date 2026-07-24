@@ -51,7 +51,11 @@
     "https://main--summit-demo--markszulc.hlx.page",
     "https://main--summit-demo--markszulc.hlx.live",
     "https://.*\\.adobe\\.com",
-    "https://.*\\.adobe\\.net"
+    "https://.*\\.adobe\\.net",
+    "https://wknd-adventures.run.place",
+    "https://main--masterclass-demo--znikolovski.aem.live",
+    "https://main--masterclass-demo--znikolovski.aem.page",
+    "https://main--masterclass-demo--znikolovski.aem.network"
   ],
   "allowedpaths":[
     ".*"

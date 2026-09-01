@@ -7,6 +7,7 @@ data:
     author:
       - "aem-extension-builder"
       - "ecf1d288306b42adaa67972f00b05080"
+      - "aem-oauth-claude"
     publish:
       - "ecf1d288306b42adaa67972f00b05080"
     preview:
